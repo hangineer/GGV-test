@@ -1,5 +1,9 @@
-@import './layout/header.scss';
-@import './layout/footer.scss';
+// 全域設定
+@import './base/reset';
 
+@import './utils/helpers';
+@import './utils/variables';
+@import './utils/mixins';
 
-@import './pages/index.scss';
+@import './layout/footer';
+// @import './pages';

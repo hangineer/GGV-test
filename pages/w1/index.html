@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+  </head>
+  <body>
+    <!-- TODO: 字體載入 -->
+    <div class="container">
+      <h1 class="title font-size-128">VITO</h1>
+      <img class="d-block mx-auto" src="https://github.com/hexschool/2022-web-layout-training/blob/main/2023week1/vito.png?raw=true" alt="avatar">
+      <h2 class="title font-size-128">RESUME</h2>
+    </div>
+    <div class="bg-gray summary-info">
+      <div class="container">
+        <p class="font-size-32 ml-auto">I'm Vito, a UI Designer with 5+ years of experience. I create visually appealing interfaces for web and mobile apps. Proficient in Sketch, Adobe XD, Figma, HTML, CSS, and JavaScript. I enjoy collaborating with others to create high-quality products.</p>
+      </div>
+    </div>
+    <div class="container">
+      <section class="info-box">
+        <div class="info-item">
+          <h3 class="info-item-title">Vito Evans</h3>
+          <ul class="font-size-24">
+            <li><a class="d-block" href="#">456 Walnut Avenue, Someville, USA</a></li>
+            <li><a href="tel:+11234567890">+1 123 456 7890</a></li>
+            <li><a href="mailto:info@hexschool.com">info@hexschool.com</a></li>
+            <li><a target="_blank" href="www.infohexschool.com">www.infohexschool.com</a></li>
+          </ul>
+        </div>
+        <div class="info-item">
+          <h3 class="info-item-title">Education</h3>
+          <ul class="font-size-24">
+            <li>
+              <span class="font-size-20 year">2014-2018</span>
+              <p>Bachelor of Science in Business Administration, University of California, Los Angeles</p>
+            </li>
+            <li>
+              <span class="font-size-20 year">2012-2014 </span>
+              <p>Associate of Arts in Graphic Design, San Francisco State University</p>
+            </li>
+            <li>
+              <span class="font-size-20 year">2008-2012 </span>
+              <p>High School Diploma, Lincoln High School</p>
+            </li>
+          </ul>
+        </div>
+        <div class="info-item">
+          <h3 class="info-item-title">Work</h3>
+          <ul class="font-size-24">
+            <li>
+              <span class="font-size-20 year">2018-2021</span>
+              <p>Marketing Manager, ABC Company</p>
+            </li>
+            <li>
+              <span class="font-size-20 year">2016-2018</span>
+              <p>Sales Associate, XYZ Corporation</p>
+            </li>
+            <li>
+              <span class="font-size-20 year">2014-2016</span>
+              <p>Customer Service Representative, QRS Inc.</p>
+            </li>
+          </ul>
+        </div>
+        <div class="info-item">
+          <h3 class="info-item-title">Awards</h3>
+          <ul class="font-size-24">
+            <li>Best in Show Award, National Advertising Awards, 2020</li>
+            <li>Honorable Mention, International Design Competition, 2019</li>
+            <li>People's Choice Award, Local Art Exhibition, 2018</li>
+          </ul>
+        </div>
+      </section>
+    </div>
+    <footer class="footer">
+      <ul>
+        <li>
+          <a href="#"><img src="https://github.com/hexschool/2022-web-layout-training/blob/main/2023week1/fb.png?raw=true" alt="facebook"></a>
+        </li>
+        <li>
+          <a href="#"><img src="https://raw.githubusercontent.com/hexschool/2022-web-layout-training/main/2023week1/instagram.png" alt="instagram"></a>
+        </li>
+        <li>
+          <a href="#"><img src="https://raw.githubusercontent.com/hexschool/2022-web-layout-training/main/2023week1/line.png" alt="line"></a>
+        </li>
+      </ul>
+    </footer>
+
+      <!-- 設計稿 -->
+      <!-- https://www.figma.com/file/eB5X8OYO4whPx3btCZdr3w/2023-%E5%88%87%E7%89%88%E5%A4%8F%E5%AD%A3%E7%8F%AD-W1---%E5%80%8B%E4%BA%BA%E5%B1%A5%E6%AD%B7?type=design&node-id=0-1&t=Tv14ZmeDj0S4NGfM-0 -->
+
+      <!-- 助教建議 -->
+      <!-- 可以在 body 統一設定 line-height: 1.5，就不用在個別區塊另外設定囉
+      每個頁面只會有一個 h1 用來標示網頁中最重要的資訊，請將其餘 h1 改為 h2 ~ h6
+      .info-box 可改用 ul > li 結構，另外這段不需使用 flex 排版，在個別區塊使用 margin-bottom 推擠即可
+      summary-info 寬度可以設定為 636px，會更符合設計稿
+      section 標籤通常會有一個主要的標題與內容，這邊的 banner 與 summary-info 區塊比較沒有那麼合適
+      .info-item 各區塊的最後一個 li 需移除 margin-bottom 設定
+      .footer 不需使用 flex 排版，可直接加上 text-align: center 將區塊置中
+      底部社群 icon 列表也可使用 ul > li 結構
+      可嘗試整份設計稿不使用 flex，運用區塊與行內元素特性來完成這份版型 -->
+  </body>
+</html>
