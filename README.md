@@ -1,4 +1,6 @@
-# 網頁切版直播班 Vite 範例
+# 本專案主要為靜態切版練習，w3有RWD (待完成)
+## 使用技術
+- scss + vite
 
 ## Node.js 版本
   - 專案的 Node.js 版本需為 v16 以上
@@ -46,3 +48,14 @@ git push -u origin main // 僅限第一次輸入，往後只需要輸入 git pus
 ```
 
 3. 初始化完畢後，執行 `npm run deploy` 指令進行自動化部署
+
+## 任務懶人連結
+- 主線任務一：個人簡歷 ｜ [Github Pages](http://127.0.0.1:5173/hex-layout-class/pages/w1/index.html)
+
+- 主線任務二：個人網站 ｜ [Github Pages]()
+- 主線任務三：眼鏡店形象網站｜ [Github Pages]()
+- 主線任務四： ｜ [Github Pages]()
+- 主線任務五： ｜ [Github Pages]()
+- 主線任務六： ｜ [Github Pages]()
+- 主線任務七： ｜ [Github Pages]()
+- 主線任務八： ｜ [Github Pages]()
