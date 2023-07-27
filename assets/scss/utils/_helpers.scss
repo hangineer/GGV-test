@@ -1,0 +1,83 @@
+// ---------COLUMN & GUTTER---------
+.col-6 {
+  width: 50%; //注意父層
+}
+.col-7 {
+  width: 58%;
+}
+.col-5 {
+  width: 42%;
+}
+.gutter-6 {
+  gap: 24px; //搭配 flex layout
+}
+// ---------DISPLAY---------
+.d-block {
+  display: block;
+}
+.d-flex {
+  display: flex;
+}
+//  ---------FLEX---------
+.justify-center {
+  justify-content: center;
+}
+.justify-around {
+  justify-content: space-around;
+}
+.items-center {
+  align-items: center;
+}
+/* 調整內層元素
+可以個別設定單一元素在交錯軸的的對齊方式
+*/
+.self-end {
+  align-self: flex-end;
+}
+// ---------FONT-SIZE---------
+.fs-128 {
+  font-size: 128px;
+}
+.fs-64 {
+  font-size: 64px;
+}
+.fs-32 {
+  font-size: 32px;
+}
+.fs-24 {
+  font-size: 24px;
+}
+.fs-20 {
+  font-size: 20px;
+}
+.fw-bold {
+  font-weight: bold;
+}
+// ---------MARGIN---------
+.mx-auto {
+  margin: 0 auto;
+}
+.ml-auto {
+  margin-left: auto; // 靠右對齊
+}
+.mr-auto {
+  margin-right: auto; // 靠左對齊
+}
+.ml-1 {
+  margin-left: 4px;
+}
+.mr-6 {
+  /* class 命名，以 4px 為一個單位， mr-6 代表要推 24px */
+  margin-right: 24px;
+}
+.mb-8 {
+  margin-bottom: 32px;
+}
+.mb-9 {
+  margin-bottom: 36px;
+}
+// ---------LINE-HEIGHT---------
+.lh-24 {
+  line-height: 1.5; // 一般為24px
+}
+

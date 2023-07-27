@@ -1,0 +1,19 @@
+@mixin links ($link, $visited, $hover, $active) {
+    & {
+        color: $link;
+        &:visited {
+            color: $visited;
+        }
+        &:hover {
+            background: $hover;
+        }
+        &:active, &:focus {
+            color: $active;
+        }
+    }
+}
+@mixin round-button {
+  cursor: pointer;
+  text-align: center;
+  border-radius: 32px;
+}
