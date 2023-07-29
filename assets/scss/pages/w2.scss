@@ -1,0 +1,116 @@
+@import '../base/reset';
+@import '../utils/variables';
+@import '../utils/helpers';
+@import '../utils/mixins';
+@import url('https://fonts.googleapis.com/css2?family=Bruno+Ace+SC&display=swap');
+
+$primary-color-1: $black;
+$primary-color-2: $white;
+$highlight-color: #00FFA3;
+$secondary-color-1: #D1D1D1;
+$secondary-color-2: #050014;
+$font-family-base:  'Bruno Ace SC', cursive, serif;
+$box-shadow: #9094FF;
+
+body {
+  font-family: $font-family-base;
+  line-height: 1.5;
+}
+.container {
+  width: 1296px;
+  margin: 0 auto;;
+}
+.bg-black {
+  background-color: black;
+}
+// CHECK: class名稱要跟顏色有關，例如tx-light-green，還是可以像原本這樣取
+.tx-highlight-color {
+  color: $highlight-color;
+}
+.tx-primary-color-2 {
+  color: $primary-color-2;
+}
+
+// HEADER
+header {
+  color: $secondary-color-1;
+  padding-top: 40px;
+  ul {
+    li {
+      min-width: 196px;
+      max-width: 306px;
+    }
+  }
+}
+
+// BANNER
+.banner {
+  padding: 72px 0;
+  .banner-title {
+    flex-direction: column;
+    a {
+      @include round-button($highlight-color);
+      padding: 12px 0;
+      width: 186px;
+      background-color: $white;
+    }
+  }
+}
+
+// INTRODUCTION
+// CHECK: 背景
+.intro {
+  background: $primary-color-1 url('../../images/w2/background-img.png') 100%/cover fixed;
+}
+
+// ABOUT ME
+.about-section {
+  padding: 160px 0;
+  .about-aside {
+    width: 636px;
+    flex-wrap: wrap;
+  }
+}
+
+// CONTACT ME
+#contact-me {
+  background: $secondary-color-2;
+  color: $white;
+  padding: 96px 0;
+  .contact-me-title {
+    img {
+      vertical-align: bottom;
+    }
+  }
+}
+.social-media-img {
+  object-fit: cover; // 讓圖維持設定好的寬高，並且圖片會自動裁切掉邊緣，防止圖片被壓縮變形
+  border-radius: 40px;
+  width: 162px;
+  height: 162px;
+  &:hover {
+    box-shadow: 0px 0px 20px 5px $box-shadow;
+  }
+}
+
+// MY PROJECTS
+.projects-section {
+  padding: 160px 0;
+    .projects-main {
+      flex-wrap: wrap;
+      .projects-main-content {
+        flex-direction: column;
+        height: 196px;
+        a {
+          @include round-button($highlight-color);
+          width: 185px;
+          padding: 12px 0;
+        }
+      }
+    }
+}
+
+// FOOTER
+footer {
+  padding: 40px 0;
+}
