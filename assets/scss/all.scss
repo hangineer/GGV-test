@@ -1,11 +1,12 @@
 // 全域設定
 // @import './base/normalize';
-@import './base/reset';
-
 @import './utils/variables';
+@import './base/reset';
 @import './utils/helpers';
 @import './utils/mixins';
 
+// CHECK: can't use
+// @import './layout/*.scss'
 @import './layout/header';
 @import './layout/content';
 @import './layout/footer';

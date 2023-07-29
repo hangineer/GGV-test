@@ -53,11 +53,15 @@ table {
   box-sizing: border-box;
 }
 img {
-  vertical-align: center;
-  height: auto;
   max-width: 100%;
+  vertical-align: middle;
+  height: auto;
 }
 a {
   text-decoration: none;
-  color: #000;
+//   color: inherit;
+}
+
+button[type='button'] {
+  cursor: pointer;
 }
