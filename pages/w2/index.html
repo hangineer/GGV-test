@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>W2</title>
-    <link rel="stylesheet" href="../../assets/scss/pages/_w2.scss">
+    <link rel="stylesheet" href="../../assets/scss/pages/w2.scss">
   </head>
   <body>
     <!-- HEADER -->
@@ -13,24 +13,29 @@
           <li>WILLIAM LEE</li>
           <li>BASED IN TAIWAN</li>
           <li >CURRENTLY FRONT END ENGINEER AT HEXSCHOOL</li>
-          <li>CONTACT ME</li>
+          <li class="text-right">CONTACT ME</li>
         </ul>
       </header>
       <!-- BANNER -->
       <div class="banner bg-black">
         <div class="container d-flex">
           <img class="col-6" src="../../assets/images/w2/people.png" alt="William Lee">
-          <div class="banner-title col-6 bg-black d-flex items-center">
+          <div
+            class="banner-title col-6 bg-black tx-primary-color-2
+            d-flex flex-col items-center"
+          >
             <h3 class="fs-64">Hi<br>I'm a FRONT-END<br>DEVELOPER</h3>
-            <h1 class="tx-secondary-color fs-128 self-end">WILLIAM</h1>
+            <h1 class="tx-highlight-color fs-128 self-end">WILLIAM</h1>
             <!-- https://stackoverflow.com/questions/29455697/what-is-the-use-of-href-in-an-anchor-tag -->
-            <a class="self-end" href="###">contact me<img class="ml-1" src="/assets/images/w2/arrow_outward.svg" alt="arrow icon"></a>
+            <a class="self-end" href="#contact-me">contact me
+              <img class="ml-1" src="/assets/images/w2/arrow_outward.svg" alt="arrow icon">
+            </a>
           </div>
         </div>
       </div>
       <!-- INTRODUCTION -->
-      <section class="intro">
-        <div class="container d-flex gutter-6">
+      <section class="intro tx-primary-color-2">
+        <div class="container d-flex justify-between">
           <div class="col-5">
             <h2 class="fs-64 mb-9">INTRODUCTION</h2>
             <p class="fs-24 mb-8">Hi, I'm William Lee, a Front-End Developer with a passion for building beautiful and responsive
@@ -39,7 +44,7 @@
               <img src="../../assets/images/w2/sparkle-sm.png" alt="sparkle small size">
               <img src="../../assets/images/w2/sparkle-sm.png" alt="sparkle small size">
           </div>
-          <div class="col-7 d-flex">
+          <div class="col-7 d-flex justify-between">
             <img src="../../assets/images/w2/sparkle.png" alt="sparkle">
             <img src="../../assets/images/w2/photographer.png" alt="photographer">
             <img src="../../assets/images/w2/people-2.png" alt="people-2">
@@ -47,13 +52,76 @@
         </div>
       </section>
       <!-- ABOUT ME -->
-      <section class="about"></section>
+      <section class="about-section container d-flex">
+        <div class="about-aside col-6 d-flex gutter-6">
+          <div class="about-content-box col-5">
+            <p class="number">01</p>
+            <h4 class="about-aside-title fs-20">Attention to Detail</h4>
+            <p class="about-aside-content">Meticulous code analysis and optimization.</p>
+          </div>
+          <div class="about-content-box col-5">
+            <p class="number">02</p>
+            <h4 class="about-aside-title fs-20">Adaptability</h4>
+            <p class="about-aside-content">Swift learning of new technologies.</p>
+          </div>
+          <div class="about-content-box col-5">
+            <p class="number">03</p>
+            <h4 class="about-aside-title fs-20">Problem Solver</h4>
+            <p class="about-aside-content">Identifying and resolving issues.</p>
+          </div>
+          <div class="about-content-box col-5">
+            <p class="number">04</p>
+            <h4 class="about-aside-title fs-20">Team Player</h4>
+            <p class="about-aside-content">Collaborates and shares ideas.</p>
+          </div>
+
+        </div>
+        <div class="about-main col-5">
+          <h2 class="fs-64 mb-9">About Me</h2>
+          <p class="fs-24">With over 5 years of experience, I'm proficient in HTML, CSS, JavaScript, jQuery, and React. I have a strong understanding of user experience design and accessibility. I'm always learning new technologies and techniques to stay up-to-date in the field.</p>
+        </div>
+      </section>
       <!-- CONTACT ME -->
+      <section id="contact-me">
+        <div class="container d-flex justify-between items-center">
+          <div class="contact-me-title">
+            <h2 class="fs-64 d-inline">CONTACT ME</h2>
+            <img src="../../assets/images/w2/trending_flat_black_24dp 1.png" alt="right arrow">
+          </div>
+          <ul class="social-media-list">
+            <li class="d-inline-block mr-5"><a href="#"><img class="social-media-img" src="../../assets/images/w2/discord.png" alt="Discord"></a></li>
+            <li class="d-inline-block mr-5"><a href="#"><img class="social-media-img" src="../../assets/images/w2/instagram.png" alt="Instagram"></a></li>
+            <li class="d-inline-block"><a href="#"><img class="social-media-img" src="../../assets/images/w2/message.png" alt="Message"></a></li>
+          </ul>
+        </div>
+      </section>
       <!-- MY PROJECTS -->
+      <section class="projects-section container">
+        <h2 class="fs-64 ml-auto col-7 mb-4">My Projects</h2>
+        <div class="projects-aside d-flex gutter-6">
+          <img src="../../assets/images/w2/Rectangle 10.png" alt="Rectangle 10"/>
+          <div class="projects-main d-flex gutter-7">
+            <div class="d-flex gutter-6">
+              <img class="self-start" src="../../assets/images/w2/Rectangle 15.png" alt="Rectangle 15">
+              <div class="projects-main-content d-flex justify-between flex-col">
+                <p>I've worked on a variety of websites, including e-commerce sites, blogs, and landing pages. I take pride in creating clean, efficient, and user-friendly code.</p>
+                <a class="bg-black tx-primary-color-2 self-start" href="#">SEE MORE
+                  <img class="ml-1" src="../../assets/images/w2/arrow_outward-white.png" alt="arrow outward" width="24" height="24">
+                </a>
+                <!-- <button class="bg-black tx-primary-color-2 self-start" type="button">SEE MORE<img class="ml-1" src="../../assets/images/w2/arrow_outward-white.png" alt="arrow outward"></button> -->
+              </div>
+            </div>
+            <div class="d-flex gutter-6">
+              <img src="../../assets/images/w2/Rectangle 14.png" alt="Rectangle 14">
+              <img src="../../assets/images/w2/Rectangle 29.png" alt="Rectangle 29">
+            </div>
+          </div>
+        </div>
+      </section>
       <!-- FOOTER -->
-
-
-
+      <footer class="bg-black text-center">
+        <p class="tx-primary-color-2">all rights reserved @hexschool2023</p>
+      </footer>
 
       <!-- 設計稿 -->
       <!-- https://www.figma.com/file/7t6ft6HEHeWkpFs7OQrdKp/2023-%E5%88%87%E7%89%88%E5%A4%8F%E5%AD%A3%E7%8F%AD-W2---%E5%80%8B%E4%BA%BA%E7%B6%B2%E9%A0%81?type=design&node-id=0%3A1&t=XrFwLsarZRxSnMSG-1 -->

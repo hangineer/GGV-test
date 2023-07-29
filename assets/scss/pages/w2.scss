@@ -23,7 +23,6 @@ body {
 .bg-black {
   background-color: black;
 }
-// CHECK: class名稱要跟顏色有關，例如tx-light-green，還是可以像原本這樣取
 .tx-highlight-color {
   color: $highlight-color;
 }
@@ -47,7 +46,6 @@ header {
 .banner {
   padding: 72px 0;
   .banner-title {
-    flex-direction: column;
     a {
       @include round-button($highlight-color);
       padding: 12px 0;
@@ -58,7 +56,6 @@ header {
 }
 
 // INTRODUCTION
-// CHECK: 背景
 .intro {
   background: $primary-color-1 url('../../images/w2/background-img.png') 100%/cover fixed;
 }
@@ -99,7 +96,6 @@ header {
     .projects-main {
       flex-wrap: wrap;
       .projects-main-content {
-        flex-direction: column;
         height: 196px;
         a {
           @include round-button($highlight-color);
