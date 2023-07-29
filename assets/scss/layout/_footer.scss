@@ -1,7 +1,9 @@
-// TODO: 高度調整
+html, body {
+  height: 100%;
+}
 .footer {
   background-color: $main-color-1;
-  text-align: center;
   color: $white;
   padding: 28px 0;
+  height: 70px;
 }
