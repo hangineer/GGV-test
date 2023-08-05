@@ -13,12 +13,15 @@
     }
 }
 
-@mixin round-button($hover) {
+@mixin round-button($hover, $textColor) {
   cursor: pointer;
   text-align: center;
   border-radius: 32px;
   &:hover {
     background: $hover;
+  }
+  &:active {
+    color: $textColor;
   }
 }
 // RWD斷點

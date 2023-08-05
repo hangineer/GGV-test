@@ -12,16 +12,17 @@ $secondary-color-1: #D1D1D1;
 $secondary-color-2: #050014;
 $font-family-base:  'Bruno Ace SC', cursive, serif;
 $box-shadow: #9094FF;
+$border-color: #E3E3E3;
 
 body {
   font-family: $font-family-base;
 }
 .container {
   width: 1296px;
-  margin: 0 auto;;
+  margin: 0 auto;
 }
 .bg-black {
-  background-color: black;
+  background-color: $black;
 }
 .tx-highlight-color {
   color: $highlight-color;
@@ -38,6 +39,9 @@ header {
     li {
       min-width: 196px;
       max-width: 306px;
+      a {
+        color: inherit;
+      }
     }
   }
 }
@@ -47,10 +51,11 @@ header {
   padding: 72px 0;
   .banner-title {
     a {
-      @include round-button($highlight-color);
+      @include round-button($highlight-color, $white);
       padding: 12px 0;
       width: 186px;
       background-color: $white;
+      color: $black;
     }
   }
 }
@@ -64,8 +69,13 @@ header {
 .about-section {
   padding: 160px 0;
   .about-aside {
-    width: 636px;
     flex-wrap: wrap;
+    .about-content-box {
+      width: 306px;
+      padding: 16px;
+      border: 1px solid $border-color;
+      box-shadow: 1px 0 5px $border-color;
+    }
   }
 }
 
@@ -86,7 +96,7 @@ header {
   width: 162px;
   height: 162px;
   &:hover {
-    box-shadow: 0px 0px 20px 5px $box-shadow;
+    box-shadow: 0 0 20px 5px $box-shadow;
   }
 }
 
@@ -98,7 +108,7 @@ header {
       .projects-main-content {
         height: 196px;
         a {
-          @include round-button($highlight-color);
+          @include round-button($highlight-color, $black);
           width: 185px;
           padding: 12px 0;
         }
