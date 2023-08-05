@@ -52,12 +52,12 @@ git push -u origin main // 僅限第一次輸入，往後只需要輸入 git pus
 
 3. 初始化完畢後，執行 `npm run deploy` 指令進行自動化部署
 
-## 任務懶人連結
-- 主線任務一：個人簡歷 ｜ [Github Pages](http://127.0.0.1:5173/hex-layout-class/pages/w1/index.html)
+## 任務連結
+- 主線任務一：個人簡歷 ｜ [Github Pages](https://hangineer.github.io/hex-layout-class/w1/index.html)
 
-- 主線任務二：個人網站 ｜ [Github Pages]()
-- 主線任務三：眼鏡店形象網站｜ [Github Pages]()
-- 主線任務四： ｜ [Github Pages]()
+- 主線任務二：個人網站 ｜ [Github Pages](https://hangineer.github.io/hex-layout-class/w2/index.html)
+- 主線任務三：眼鏡店形象網站｜ [Github Pages](https://hangineer.github.io/hex-layout-class/w3/index.html)
+- 主線任務四：眼鏡店形象網站｜ [Github Pages](https://hangineer.github.io/hex-layout-class/w3/index.html) (延續主線任務三)
 - 主線任務五： ｜ [Github Pages]()
 - 主線任務六： ｜ [Github Pages]()
 - 主線任務七： ｜ [Github Pages]()

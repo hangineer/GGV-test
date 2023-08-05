@@ -12,6 +12,7 @@
         }
     }
 }
+
 @mixin round-button($hover) {
   cursor: pointer;
   text-align: center;
@@ -20,3 +21,34 @@
     background: $hover;
   }
 }
+// RWD斷點
+@mixin pad {
+  @media(max-width: 768px) {
+    @content;
+  }
+}
+
+@mixin mobile {
+  @media(max-width: 375px) {
+    @content;
+  }
+}
+
+// 下方為同事的版本
+// @mixin phoneToPC {
+//   @media(max-width: 768px) {
+//     @content;
+//   }
+// }
+
+// @mixin pad {
+//   @media(min-width: 375px) and (max-width: 768px) {
+//     @content;
+//   }
+// }
+
+// @mixin pc {
+//   @media(min-width: 768px) {
+//     @content;
+//  }
+// }

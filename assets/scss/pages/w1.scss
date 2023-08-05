@@ -1,6 +1,8 @@
+@import '../utils/variables'; //variables與reset引入順序視reset裡是否有使用變數而定
 @import '../base/reset';
-@import '../utils/variables';
+@import '../utils/spacing';
 @import '../utils/helpers';
+@import '../utils/mixins';
 @import url('https://fonts.googleapis.com/css2?family=Castoro:ital@0;1&display=swap');
 
 
@@ -48,7 +50,6 @@ img {
   // 關於 VITO 和邊界的距離，實作上 container 還需要另外設定左右 padding，讓網頁元素距離邊界有一點點空間，視覺上比較舒適。
   padding: 0 10px;
   h2 {
-    text-align: right;
     // height: 192px;
     //文字垂直居中，值要跟height一樣
     // https://segmentfault.com/a/1190000005122321
@@ -82,7 +83,6 @@ img {
 .footer {
   background: $black;
   padding: 64px 0;
-  text-align: center;
   margin-top: 160px;
   li {
     display: inline-block;

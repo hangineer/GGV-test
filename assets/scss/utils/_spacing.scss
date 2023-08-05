@@ -1,0 +1,54 @@
+// ---------COLUMN & GUTTER---------
+.col-3 {
+  width: 25%; // 要注意父層是誰
+}
+.col-4 {
+  width: 33%;
+}
+.col-5 {
+  width: 41%;
+}
+.col-6 {
+  width: 50%;
+}
+.col-7 {
+  width: 58%;
+}
+.col-8 {
+  width: 66%;
+}
+.col-12 {
+  width: 100%;
+}
+// gutter-* 搭配 flex layout
+.gutter-5 {
+  gap: 20px;
+}
+.gutter-6 {
+  gap: 24px;
+}
+.gutter-7 {
+  gap: 28px;
+}
+.gutter-16 {
+  gap: 64px;
+}
+
+
+/* 助教
+為了讓元素之間產生間距（gutter），
+可以在 col 的結構左右加上 padding，
+col 間距就會從兩個 padding 產生出來
+*/
+.px-3 {
+  padding-left: 12px;
+  padding-right: 12px;
+}
+/* 左右邊加入負值的 margin 來抵銷掉多出來的 padding */
+.row {
+  margin: 0 -12px;
+  display: flex;
+}
+.justify-self {
+  justify-self: center;
+}

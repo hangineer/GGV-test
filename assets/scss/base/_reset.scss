@@ -68,9 +68,10 @@ img {
 }
 a {
   text-decoration: none;
-//   color: inherit;c
+  // color: inherit;
 }
 
-button[type='button'] {
+input[type='button'], button[type='button'] {
   cursor: pointer;
+  border: 0;
 }

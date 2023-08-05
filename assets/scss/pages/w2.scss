@@ -1,5 +1,6 @@
-@import '../base/reset';
 @import '../utils/variables';
+@import '../base/reset';
+@import '../utils/spacing';
 @import '../utils/helpers';
 @import '../utils/mixins';
 @import url('https://fonts.googleapis.com/css2?family=Bruno+Ace+SC&display=swap');
@@ -69,7 +70,7 @@ header {
 }
 
 // CONTACT ME
-#contact-me {
+.contact-me {
   background: $secondary-color-2;
   color: $white;
   padding: 96px 0;
