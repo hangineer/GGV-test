@@ -35,10 +35,6 @@ footer, header, hgroup, menu, nav, section {
 }
 body {
   line-height: 1.5;
-  height: 100%; /* 首頁 footer 使用 */
-}
-html {
-  height: 100%; /* 首頁 footer 使用 */
 }
 ol, ul {
   list-style: none;
@@ -71,7 +67,7 @@ a {
   // color: inherit;
 }
 
-input[type="button"], button[type="button"] {
+input[type="button"], input[type="submit"], button[type="button"] {
   cursor: pointer;
   border: 0;
 }
