@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>W2</title>
-    <link rel="stylesheet" href="../../assets/scss/pages/w2.scss">
+    <link rel="stylesheet" href="../../assets/scss/pages/w2/w2.scss">
   </head>
   <body>
     <!-- HEADER -->
@@ -127,9 +127,27 @@
 
       <!-- 設計稿 -->
       <!-- https://www.figma.com/file/7t6ft6HEHeWkpFs7OQrdKp/2023-%E5%88%87%E7%89%88%E5%A4%8F%E5%AD%A3%E7%8F%AD-W2---%E5%80%8B%E4%BA%BA%E7%B6%B2%E9%A0%81?type=design&node-id=0%3A1&t=XrFwLsarZRxSnMSG-1 -->
+
       <!-- 助教建議
         最上方的列表 CONTACT ME 屬於連結，可以加上 a 標籤。
         .about-aside 為有序清單，所以可以使用 ol > li 結構。
+      -->
+
+      <!-- Q & A
+      Q：我改成用flex排版，但是如果拿掉col-5就會跑版，不太確定我是不是誤解意思？
+      A：如果把  INTRODUCTION 下面div中的 col-5 拿掉的話，代表說本身的寬度限制會被移除
+        所以 .col-5 移除，左邊的文字就必須使用 br 來換行 ！
+        但後來想想加上寬度來限制區塊，也是可以的方法之一
+
+      Q：我可以理解all.scss 會import 許多不同的scss檔案，在w1.scss, w2.scss
+      （各週主線的scss檔名前面，我都沒有加上底線）裡又得引入以下這些檔案，這樣是否不妥？
+      A：各週主線前面沒有加上底線，我覺得沒有問題，其餘的 .scss 檔案要加入下底線主要的目的是要讓編譯器 or
+        我們自己知道說這個 .scss 檔案是要作為「匯入」使用，所以不需要被編譯 ~檔案 w1.scss 則是整個做整個「匯入的集合點」所以需要被編譯
+
+      Q：滿版的背景，在螢幕寬度縮小時就會變成圖片中那樣，主要原因是什麼呢？
+      A：這是因為這一週作業還沒完做 RWD 的部分，所以 .header 看起來才怪怪的
+        可以將 .container 的 width 改成 max-width 會比較明顯
+        這時候旁邊的空白處是因為底下的圖片有超過最大限制，導致於畫面出現 x 軸才像是沒有滿版的唷！
       -->
 
   </body>

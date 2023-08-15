@@ -1,8 +1,8 @@
-@import '../utils/variables';
-@import '../base/reset';
-@import '../utils/spacing';
-@import '../utils/helpers';
-@import '../utils/mixins';
+@import '../../utils/variables';
+@import '../../base/reset';
+@import '../../utils/spacing';
+@import '../../utils/helpers';
+@import '../../utils/mixins';
 @import url('https://fonts.googleapis.com/css2?family=Bruno+Ace+SC&display=swap');
 
 $primary-color-1: $black;
@@ -18,7 +18,7 @@ body {
   font-family: $font-family-base;
 }
 .container {
-  width: 1296px;
+  max-width: 1296px;
   margin: 0 auto;
 }
 .bg-black {

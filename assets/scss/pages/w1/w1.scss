@@ -1,11 +1,9 @@
-@import '../utils/variables'; //variables與reset引入順序視reset裡是否有使用變數而定
-@import '../base/reset';
-@import '../utils/spacing';
-@import '../utils/helpers';
-@import '../utils/mixins';
+@import '../../utils/variables'; //variables與reset引入順序視reset裡是否有使用變數而定
+@import '../../base/reset';
+@import '../../utils/spacing';
+@import '../../utils/helpers';
+@import '../../utils/mixins';
 @import url('https://fonts.googleapis.com/css2?family=Castoro:ital@0;1&display=swap');
-
-
 
 $primary-color: $black;
 $secondary-color: #ae0000;
