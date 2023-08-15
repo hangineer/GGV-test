@@ -15,6 +15,9 @@
 .flex-col {
   flex-direction: column;
 }
+.flex-wrap {
+  flex-wrap: wrap;
+}
 .justify-center {
   justify-content: center;
 }
@@ -46,7 +49,10 @@
 .self-end {
   align-self: flex-end;
 }
-// ---------FONT-SIZE---------
+// ---------FONT---------
+.fs-14 {
+  font-size: 14px;
+}
 .fs-20 {
   font-size: 20px;
 }
@@ -58,6 +64,9 @@
 }
 .fs-36 {
   font-size: 36px;
+}
+.fs-48 {
+  font-size: 48px;
 }
 .fs-64 {
   font-size: 64px;
@@ -94,6 +103,15 @@
   /* class 命名，以 4px 為一個單位， mr-6 代表要推 24px */
   margin-right: 24px;
 }
+.mr-12 {
+  margin-right: 48px;
+}
+.mb-1 {
+  margin-bottom: 4px;
+}
+.mb-2 {
+  margin-bottom: 8px;
+}
 .mb-4 {
   margin-bottom: 16px;
 }
@@ -109,7 +127,13 @@
 .mb-9 {
   margin-bottom: 36px;
 }
-// TEXT-ALIGN
+.mb-12 {
+  margin-bottom: 48px;
+}
+.mb-18 {
+  margin-bottom: 72px;
+}
+// ---------TEXT-ALIGN---------
 .text-center {
   text-align: center;
 }

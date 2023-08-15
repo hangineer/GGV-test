@@ -1,0 +1,156 @@
+@import '../../utils/variables';
+@import '../../base/reset';
+@import '../../utils/spacing';
+@import '../../utils/helpers';
+@import '../../utils/mixins';
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@400;700&family=Roboto:wght@400;500;700&display=swap');
+
+$primary-color-1: #AA0601;
+$primary-color-2: #650300;
+$highlight-color: #00FFA3;
+$secondary-color-1: $white;
+$secondary-color-2: #FBF2F2;
+$gray-100: #00000029;
+$gray-200:  #707070;
+$hover: #650300;
+$font-family-base: 'Noto Sans TC', 'Roboto', sans-serif;
+
+body {
+  font-family: $font-family-base;
+  // CHECK:
+  // overflow-x: hidden;
+}
+.container {
+  max-width: 1320px; // 1296px + 24px(左右間距)
+  padding: 0 12px;
+  margin: 0 auto;
+}
+.text-primary-color-1 {
+  color: $primary-color-1;
+}
+.text-primary-color-2 {
+  color: $primary-color-2;
+}
+.text-secondary-color-1 {
+  color: $secondary-color-1
+}
+.bg-secondary-2 {
+  background-color:  $secondary-color-2;
+}
+.bg-primary-1 {
+  background: $primary-color-1;
+}
+.italic-roboto {
+  font-family: 'roboto';
+  font-style: italic;
+}
+.regular-roboto {
+  font-family: 'roboto';
+}
+.regular-noto-sans {
+  font-family: 'Noto Sans TC';
+
+}
+// 各個區塊使用
+.section-block {
+  padding: 80px 0;
+}
+
+// HEADER
+header {
+  padding: 16px 0;
+  cursor: pointer;
+  img {
+    object-fit: cover;
+    width: 80px;
+  }
+}
+// BANNER
+.banner {
+  height: 787px;
+  background: $primary-color-1 url('/assets/images/w3/home-header.png') 20% 50%/cover no-repeat;
+  .banner-title {
+    padding: 296px 0;
+  }
+  button {
+    padding: 6px 12px;
+  }
+}
+// PRODUCT CO-BRAND
+.product-co-brand {
+  background: $primary-color-1 url('/assets/images/w3/index-bg.png') center/cover no-repeat;
+.product-co-brand-row {
+  h3 {
+    background: $white;
+    padding: 8px 0;
+  }
+}
+}
+
+// RECOMMEND
+// TODO: 優化寫法
+.card {
+  box-shadow: 0px 2px 6px $gray-100;
+  .card-content {
+    padding: 16px;
+  }
+  .date {
+    color: $gray-200;
+  }
+}
+// CONTACT US
+.contact-us {
+  input:not([type="checkbox"]):not([type="submit"]) {
+    width: 100%;
+    height: 36px;
+    border: 1px solid $black;
+  }
+  input[type="checkbox"] {
+    width: 24px;
+    height: 24px;
+    vertical-align: bottom;
+    border-width: 2px;
+  }
+  input[type="submit"] {
+    padding: 16px 0;
+    margin-top: 48px;
+    &:hover {
+      background: $hover;
+    }
+  }
+}
+
+// FOOTER
+footer {
+  div:nth-child(1) {
+    padding: 48px 0 24px;
+  }
+  div:nth-child(3) {
+    border-top: 1px solid $white;
+    padding: 32px 0;
+  }
+}
+
+// @include mobile {
+//   .col-md-6 {
+//     width: 50%;
+//   }
+// }
+/* 放在後方 */
+@include pad {
+  /* 768px 以下時變 6 欄 */
+  /* md 是 middle，在這裡是示意為平板寬度 */
+  .col-md-6 {
+    width: 50%;
+  }
+
+  /* 768px 以下時變 12 欄 */
+  .col-md-12 {
+    width: 100%;
+  }
+
+  /* 768px 以下時加入 margin-bottom: 24px;，讓垂直排列的元素間隔 24px */
+  // .mb-md-6 {
+  //   margin-bottom: 24px;
+  // }
+}
