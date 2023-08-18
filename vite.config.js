@@ -31,6 +31,10 @@ export default defineConfig({
     ViteEjsPlugin(),
     moveOutputPlugin(),
   ],
+  css: {
+    // 可看到來源程式和行數，連結到Source
+    devSourcemap: true,
+  }
   server: {
     // 啟動 server 時預設開啟的頁面
     open: 'pages/index.html',
