@@ -1,6 +1,6 @@
 // ---------COLUMN & GUTTER---------
 .col-1 {
-  width: 8.3%; // 要注意父層是誰
+  width: 8.333%; // 要注意父層是誰
 }
 .col-3 {
   width: 25%; // 要注意父層是誰
@@ -19,6 +19,9 @@
 }
 .col-8 {
   width: 66%;
+}
+.col-10 {
+  width: 83.333%;
 }
 .col-12 {
   width: 100%;
@@ -54,6 +57,7 @@ col 間距就會從兩個 padding 產生出來
   padding-right: 12px;
 }
 /* 左右邊加入負值的 margin 來抵銷掉多出來的 padding，https://codepen.io/izumi-dev/pen/bGQaMgG */
+/* container > row > column */
 .row {
   display: flex;
   margin: 0 -12px;
