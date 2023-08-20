@@ -17,14 +17,20 @@ $font-family-base: 'Noto Sans TC', 'Roboto', sans-serif;
 
 body {
   font-family: $font-family-base;
-  // CHECK:
-  // overflow-x: hidden;
 }
 .container {
-  max-width: 1320px; // 1296px + 24px(左右間距)
+  // PC
+  max-width: 1296px; // 1296px + 24px(左右間距)
   padding: 0 12px;
   margin: 0 auto;
+  @include pad {
+    max-width: 720px; // 696px +24px
+  }
+  @include mobile {
+    max-width: 372px; // 348px + 24px
+  }
 }
+
 .text-primary-color-1 {
   color: $primary-color-1;
 }
@@ -59,45 +65,162 @@ body {
 // HEADER
 header {
   padding: 16px 0;
-  cursor: pointer;
-  img {
+  @include pad {
+    padding-bottom: 0;
+  }
+  .logo {
     object-fit: cover;
     width: 80px;
+    @include pad {
+      margin: 0 0 16px 16px;
+    }
+  }
+  .header-item {
+    @include pad {
+      margin-right: 0;
+      border: 1px solid $white;
+    }
+  }
+  .header-link {
+    display: block;
+    color: $white;
+    padding: 8px 32px;
+    @include pad {
+      font-size: 16px;
+      text-align: center;
+      padding: 12px 0;
+    }
+  }
+  .header-wrap {
+    @include pad {
+      /* 移除左右 padding 再加入 max-width: 100%; 讓導覽列能變為滿版 */
+      padding-left: 0;
+      padding-right: 0;
+      max-width: 100%;
+    }
   }
 }
+
 // BANNER
 .banner {
-  height: 787px;
   background: $primary-color-1 url('/assets/images/w3/home-header.png') 20% 50%/cover no-repeat;
+  @include mobile {
+    background: $primary-color-1 url('/assets/images/w3/home-header-sm.png') center/cover no-repeat;
+  }
   .banner-title {
-    padding: 296px 0;
+    padding-top: 296px;
+    padding-bottom: 296px;
+    @include padToMobile {
+      h3 {
+        font-size: 28px;
+      }
+      h1 {
+        font-size: 36px;
+        margin-bottom: 10px;
+      }
+    }
+    @include mobile {
+      padding-top: 144px;
+      padding-bottom: 144px;
+      h3 {
+        font-size: 16px;
+      }
+      h1 {
+        font-size: 24px;
+      }
+    }
   }
   button {
     padding: 6px 12px;
   }
 }
-// PRODUCT CO-BRAND
-.product-co-brand {
-  background: $primary-color-1 url('/assets/images/w3/index-bg.png') center/cover no-repeat;
-.product-co-brand-row {
+
+// INTRO
+.intro {
   h3 {
-    background: $white;
-    padding: 8px 0;
+    @include padToMobile {
+      font-size: 32px;
+    }
+    @include mobile {
+      font-size: 24px;
+    }
   }
-}
 }
 
-// RECOMMEND
-// TODO: 優化寫法
-.card {
-  box-shadow: 0px 2px 6px $gray-100;
-  .card-content {
-    padding: 16px;
+// PRODUCT CLASSIC
+.product-classic {
+  .classic-title {
+    @include mobile {
+      font-size: 24px;
+      margin-bottom: 24px;
+    }
   }
-  .date {
-    color: $gray-200;
+  .product-classic {
+    @media(max-width: 1400px) {
+    }
+    @media(max-width: 992px) {
+      h3 {
+        font-size: 40px;
+        margin-bottom: 24px;
+      }
+      // padding-left: 0;
+      // padding-right: 0;
+      padding: 0;
+      flex-direction: column;
+      align-items: center;
+    }
   }
 }
+// PRODUCT CO-BRAND
+.product-co-brand {
+  background: $primary-color-1 url('/assets/images/w3/index-bg.png') left top/cover no-repeat;
+  h2 {
+    @include mobile {
+      font-size: 24px;
+      margin-bottom: 24px;
+    }
+  }
+  .product-co-brand-row {
+    h3 {
+      background: $white;
+      padding: 8px 0;
+      border-right: 1px solid $gray-100;
+    }
+    img {
+      @include mobile {
+        height: 240px;
+      }
+    }
+  }
+}
+// RECOMMEND
+.recommend {
+  @include mobile {
+    padding-left: 14px;
+    padding-right: 14px;
+    h2 {
+      font-size: 24px;
+      margin-bottom: 24px;
+    }
+  }
+  .card {
+    position: relative;
+    @include mobile {
+      margin-bottom: 16px;
+    }
+    .card-content {
+      box-shadow: 0px 2px 6px $gray-100;
+      padding: 16px;
+      height: 205px;
+    }
+    .date {
+      position: absolute;
+      bottom: 16px;
+      color: $gray-200;
+    }
+  }
+}
+
 // CONTACT US
 .contact-us {
   input:not([type="checkbox"]):not([type="submit"]) {
@@ -111,46 +234,166 @@ header {
     vertical-align: bottom;
     border-width: 2px;
   }
+  textarea {
+    resize: none;
+  }
   input[type="submit"] {
     padding: 16px 0;
     margin-top: 48px;
+    max-width: 416px;
     &:hover {
       background: $hover;
+    }
+  }
+  .contact-content  {
+    @include pad {
+      font-size: 16px;
+    }
+  }
+  h2 {
+    @include mobile {
+      font-size: 24px;
+      margin-bottom: 24px;
     }
   }
 }
 
 // FOOTER
+// 此區塊因部分文字在過渡時期會跑版，所以在576px下了一個斷點
 footer {
-  div:nth-child(1) {
-    padding: 48px 0 24px;
+  ul.footer-list {
+    @include pad {
+      gap: 24px;
+    }
   }
+  ul.footer-list {
+    @include padToMobile {
+      gap: 15px;
+    }
+  }
+  @include padToMobile {
+    .footer-info {
+      position: relative;
+    }
+    ul.footer-list {
+      display: none;
+    }
+  }
+  ul.footer-social-media {
+    @include padToMobile {
+      margin-left: auto;
+    }
+    @include pad {
+      gap: 16px;
+      li img {
+        width: 32px;
+        height: 32px;
+      }
+    }
+    @include padToMobile {
+      position: absolute;
+      right: 0;
+      top: 24px;
+      gap: 8px;
+      li img {
+        width: 24px;
+        height: 24px;
+      }
+    }
+  }
+  .footer-contact {
+    span {
+      vertical-align: middle;
+    }
+    @include padToMobile {
+      padding: 0 8px;
+      margin-bottom: 24px;
+    }
+    .phone-icon, .email-icon {
+      margin-right: 22px;
+      @include padToMobile {
+        margin-right: 10px;
+      }
+    }
+    .phone-icon {
+      @include padToMobile {
+        font-size: 18px;
+      }
+    }
+    .email-icon {
+      @include padToMobile {
+        font-size: 20px;
+      }
+    }
+    .phone, .email {
+      @include padToMobile {
+        font-size: 16px;
+      }
+    }
+  }
+  .footer-info {
+    padding: 48px 0 24px;
+    @include padToMobile {
+      padding-top: 0;
+    }
+  }
+
   div:nth-child(3) {
     border-top: 1px solid $white;
     padding: 32px 0;
+    @include padToMobile {
+      padding: 24px 0;
+    }
+  }
+  .privacy {
+    span {
+      @include padToMobile {
+        display: block;
+      }
+    }
   }
 }
 
-// @include mobile {
-//   .col-md-6 {
-//     width: 50%;
-//   }
-// }
 /* 放在後方 */
 @include pad {
-  /* 768px 以下時變 6 欄 */
-  /* md 是 middle，在這裡是示意為平板寬度 */
   .col-md-6 {
     width: 50%;
   }
-
-  /* 768px 以下時變 12 欄 */
+  .col-md-10 {
+    width: 83.333%;
+  }
   .col-md-12 {
     width: 100%;
   }
+  .mb-md-6 {
+    margin-bottom: 24px;
+  }
+  .px-md-9 {
+    // 分開寫的原因是避免覆蓋掉.section-block
+    padding-left: 36px;
+    padding-right: 36px;
+  }
+  .flex-md-wrap {
+    flex-wrap: wrap;
+  }
+  .flex-md-col {
+    flex-direction: column;
+  }
+  .section-md-block {
+    padding: 40px 0;
+  }
 
-  /* 768px 以下時加入 margin-bottom: 24px;，讓垂直排列的元素間隔 24px */
-  // .mb-md-6 {
-  //   margin-bottom: 24px;
-  // }
+}
+
+@include mobile {
+  .col-sm-4 {
+    width: 100%;
+  }
+  .px-sm-3 {
+    padding-left: 12px;
+    padding-right: 12px;
+  }
+  .mb-sm-2 {
+    margin-bottom: 8px;
+  }
 }
