@@ -1,0 +1,100 @@
+@import "../../utils/mixins";
+@import "../../utils/variables";
+
+// W3 FOOTER 區塊文字、圖案在過渡時期會被擠壓造成跑版，在 576px 多加一個斷點
+footer {
+  ul.footer-list {
+    @include pad {
+      gap: 24px;
+    }
+  }
+  ul.footer-list {
+    @include padToMobile {
+      gap: 15px;
+    }
+  }
+  @include padToMobile {
+    .footer-info {
+      position: relative;
+    }
+    ul.footer-list {
+      display: none;
+    }
+  }
+  ul.footer-social-media {
+    @include padToMobile {
+      margin-left: auto;
+    }
+    @include pad {
+      gap: 16px;
+      li img {
+        width: 32px;
+        height: 32px;
+      }
+    }
+    @include padToMobile {
+      position: absolute;
+      right: 0;
+      top: 24px;
+      gap: 8px;
+      li img {
+        width: 24px;
+        height: 24px;
+      }
+    }
+  }
+  .footer-contact {
+    span {
+      vertical-align: middle;
+    }
+    @include padToMobile {
+      padding: 0 8px;
+      margin-bottom: 24px;
+    }
+    .phone-icon, .email-icon {
+      margin-right: 22px;
+      @include padToMobile {
+        margin-right: 10px;
+      }
+    }
+    .phone-icon {
+      @include padToMobile {
+        font-size: 18px;
+      }
+    }
+    .email-icon {
+      @include padToMobile {
+        font-size: 20px;
+      }
+    }
+    .phone, .email {
+      @include padToMobile {
+        font-size: 16px;
+      }
+    }
+  }
+  .footer-info {
+    padding: 48px 0 24px;
+    @include padToMobile {
+      padding-top: 0;
+    }
+  }
+
+  div:nth-child(3) {
+    border-top: 1px solid $white;
+    padding: 32px 0;
+    @include padToMobile {
+      padding: 24px 0;
+    }
+  }
+  .footer-policy {
+    @include padToMobile {
+      flex-direction: column;
+      .privacy {
+        span {
+          display: block;
+        }
+      }
+    }
+  }
+}

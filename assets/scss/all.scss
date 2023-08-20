@@ -6,8 +6,6 @@
 @import './utils/helpers';
 @import './utils/mixins';
 
-// CHECK: can't use
-// @import './layout/*.scss'
 @import './layout/header';
 @import './layout/content';
 @import './layout/footer';

@@ -62,45 +62,7 @@ body {
   padding: 80px 0;
 }
 
-// HEADER
-header {
-  padding: 16px 0;
-  @include pad {
-    padding-bottom: 0;
-  }
-  .logo {
-    object-fit: cover;
-    width: 80px;
-    @include pad {
-      margin: 0 0 16px 16px;
-    }
-  }
-  .header-item {
-    @include pad {
-      margin-right: 0;
-      border: 1px solid $white;
-    }
-  }
-  .header-link {
-    display: block;
-    color: $white;
-    padding: 8px 32px;
-    @include pad {
-      font-size: 16px;
-      text-align: center;
-      padding: 12px 0;
-    }
-  }
-  .header-wrap {
-    @include pad {
-      /* 移除左右 padding 再加入 max-width: 100%; 讓導覽列能變為滿版 */
-      padding-left: 0;
-      padding-right: 0;
-      max-width: 100%;
-    }
-  }
-}
-
+// HEADER + FOOTER 從外部引入
 // BANNER
 .banner {
   background: $primary-color-1 url('/assets/images/w3/home-header.png') 20% 50%/cover no-repeat;
@@ -258,103 +220,7 @@ header {
   }
 }
 
-// FOOTER
-// 此區塊因部分文字在過渡時期會跑版，所以在576px下了一個斷點
-footer {
-  ul.footer-list {
-    @include pad {
-      gap: 24px;
-    }
-  }
-  ul.footer-list {
-    @include padToMobile {
-      gap: 15px;
-    }
-  }
-  @include padToMobile {
-    .footer-info {
-      position: relative;
-    }
-    ul.footer-list {
-      display: none;
-    }
-  }
-  ul.footer-social-media {
-    @include padToMobile {
-      margin-left: auto;
-    }
-    @include pad {
-      gap: 16px;
-      li img {
-        width: 32px;
-        height: 32px;
-      }
-    }
-    @include padToMobile {
-      position: absolute;
-      right: 0;
-      top: 24px;
-      gap: 8px;
-      li img {
-        width: 24px;
-        height: 24px;
-      }
-    }
-  }
-  .footer-contact {
-    span {
-      vertical-align: middle;
-    }
-    @include padToMobile {
-      padding: 0 8px;
-      margin-bottom: 24px;
-    }
-    .phone-icon, .email-icon {
-      margin-right: 22px;
-      @include padToMobile {
-        margin-right: 10px;
-      }
-    }
-    .phone-icon {
-      @include padToMobile {
-        font-size: 18px;
-      }
-    }
-    .email-icon {
-      @include padToMobile {
-        font-size: 20px;
-      }
-    }
-    .phone, .email {
-      @include padToMobile {
-        font-size: 16px;
-      }
-    }
-  }
-  .footer-info {
-    padding: 48px 0 24px;
-    @include padToMobile {
-      padding-top: 0;
-    }
-  }
-
-  div:nth-child(3) {
-    border-top: 1px solid $white;
-    padding: 32px 0;
-    @include padToMobile {
-      padding: 24px 0;
-    }
-  }
-  .privacy {
-    span {
-      @include padToMobile {
-        display: block;
-      }
-    }
-  }
-}
-
-/* 放在後方 */
+/* 置於最後 */
 @include pad {
   .col-md-6 {
     width: 50%;
@@ -382,7 +248,6 @@ footer {
   .section-md-block {
     padding: 40px 0;
   }
-
 }
 
 @include mobile {

@@ -7,21 +7,12 @@
     <title>w3</title>
     <link rel="icon" sizes="32x32" type="image/x-icon" href="/assets/images/w3/favIcon.jpg">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
-    <link rel="stylesheet" href="../../assets/scss/pages/w3/w3.scss">
+    <link rel="stylesheet" href="../../assets/scss/pages/w3/home.scss">
+    <link rel="stylesheet" href="../../assets/scss/layout/w3/footer.scss">
+    <link rel="stylesheet" href="../../assets/scss/layout/w3/header.scss">
   </head>
   <body>
-    <!-- HEADER -->
-    <header class="header text-secondary-color-1 fs-20 bg-primary-1">
-      <div class="header-wrap container d-flex flex-md-col justify-between">
-        <a class="logo" href="/pages/w3/index.html"><img src="../../assets/images/w3/logo-white.png" alt="logo"></a>
-        <ul class="header-list d-flex flex-md-wrap justify-around items-center">
-          <li class="header-item col-md-6"><a class="header-link" href="#">系列鏡框</a></li>
-          <li class="header-item col-md-6"><a class="header-link" href="#">門市據點</a></li>
-          <li class="header-item col-md-6"><a class="header-link" href="#">部落格</a></li>
-          <li class="header-item col-md-6"><a class="header-link" href="#">常見問題</a></li>
-        </ul>
-      </div>
-    </header>
+    <%- include('./layout/w3/header'); -%>
     <!-- BANNER -->
     <section class="banner text-primary-color-2">
       <div class="banner-title container text-right">
@@ -150,39 +141,8 @@
         </div>
       </section>
     </div>
-    <!-- FOOTER -->
-    <div class="bg-primary-1 text-secondary-color-1">
-      <footer class="container">
-        <div class="footer-info d-flex justify-between items-center">
-          <ul class="footer-list d-flex gutter-12">
-            <li>首頁</li>
-            <li>系列鏡框</li>
-            <li>門市據點</li>
-            <li>部落格</li>
-            <li>常見問題</li>
-          </ul>
-          <ul class="footer-social-media d-flex gutter-8">
-            <li><img src="../../assets/images/w3/ic-social-fb.png" alt="facebook" width="48" height="48"></li>
-            <li><img src="../../assets/images/w3/ic_social_ig.png" alt="instraram" width="48" height="48"></li>
-            <li><img src="../../assets/images/w3/ic_social_line.png" alt="line" width="48" height="48"></li>
-          </ul>
-        </div>
-        <div class="footer-contact mb-8">
-          <!-- https://developers.google.com/fonts/docs/material_icons?hl=zh-tw -->
-            <span class="phone-icon material-symbols-outlined fs-36 fw-bold">call</span>
-            <span class="phone fs-36">0800-000-00</span><br>
-            <span class="email-icon material-symbols-outlined fs-36 fw-bold">mail</span>
-            <span class="email fs-36">glasses@business.com</span>
-        </div>
-        <div class="footer-policy d-flex justify-between flex-md-wrap">
-          <p class="regular-roboto col-sm-4 mb-sm-2">Copyright © 2020 Glasses.All rights reserved.</p>
-          <div class="privacy">
-            <span class="mr-12 mb-sm-2">隱私權政策</span>
-            <span class="mr-12">服務條款</span>
-          </div>
-        </div>
-      </footer>
-    </div>
+    <%- include('./layout/w3/footer'); -%>
+
     <!-- 設計稿 -->
     <!-- https://xd.adobe.com/view/5b20cbc4-5c64-4b67-814e-633b078a8cd4-0e73/grid/ -->
     <!-- 助教建議 -->

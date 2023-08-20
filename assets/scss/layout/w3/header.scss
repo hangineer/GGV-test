@@ -1,0 +1,40 @@
+@import "../../utils/mixins";
+@import "../../utils/variables";
+
+header {
+  padding: 16px 0;
+  @include pad {
+    padding-bottom: 0;
+  }
+  .logo {
+    object-fit: cover;
+    width: 80px;
+    @include pad {
+      margin: 0 0 16px 16px;
+    }
+  }
+  .header-item {
+    @include pad {
+      margin-right: 0;
+      border: 1px solid $white;
+    }
+  }
+  .header-link {
+    display: block;
+    color: $white;
+    padding: 8px 32px;
+    @include pad {
+      font-size: 16px;
+      text-align: center;
+      padding: 12px 0;
+    }
+  }
+  .header-wrap {
+    @include pad {
+      /* 移除左右 padding 再加入 max-width: 100%; 讓導覽列能變為滿版 */
+      padding-left: 0;
+      padding-right: 0;
+      max-width: 100%;
+    }
+  }
+}
