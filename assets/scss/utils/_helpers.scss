@@ -11,6 +11,9 @@
 .d-inline {
   display: inline;
 }
+.d-none {
+  display: none;
+}
 //  ---------FLEX---------
 .flex-col {
   flex-direction: column;
@@ -53,6 +56,9 @@
 .fs-14 {
   font-size: 14px;
 }
+.fs-18 {
+  font-size: 18px;
+}
 .fs-20 {
   font-size: 20px;
 }
@@ -84,11 +90,17 @@
 .ml-auto {
   margin-left: auto; // 靠右對齊
 }
+.ml-1 {
+  margin-left: 4px;
+}
+.ml-4 {
+  margin-left: 16px;
+}
 .mr-auto {
   margin-right: auto; // 靠左對齊
 }
-.ml-1 {
-  margin-left: 4px;
+.mr-2 {
+  margin-right: 8px;
 }
 .mr-3 {
   margin-right: 12px;
@@ -126,6 +138,9 @@
 }
 .mb-9 {
   margin-bottom: 36px;
+}
+.mb-10 {
+  margin-bottom: 40px;
 }
 .mb-12 {
   margin-bottom: 48px;

@@ -7,7 +7,6 @@
 
 $primary-color-1: #AA0601;
 $primary-color-2: #650300;
-$highlight-color: #00FFA3;
 $secondary-color-1: $white;
 $secondary-color-2: #FBF2F2;
 $gray-100: #00000029;
@@ -20,7 +19,7 @@ body {
 }
 .container {
   // PC
-  max-width: 1296px; // 1296px + 24px(左右間距)
+  max-width: 1320px; // 1296px + 24px(左右間距)
   padding: 0 12px;
   margin: 0 auto;
   @include pad {
