@@ -1,0 +1,147 @@
+@import '../../utils/variables';
+@import '../../base/reset';
+@import '../../utils/spacing';
+@import '../../utils/helpers';
+@import '../../utils/mixins';
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@400;700&family=Roboto:wght@400;500;700&display=swap');
+
+$primary-color-1: #AA0601;
+$primary-color-2: #9F1213;
+$secondary-color-1: $white;
+$gray-100: #CED4DA;
+$gray-200: #495057;
+$gray-300: #00000020;
+$font-family-base: 'Noto Sans TC', 'Roboto', sans-serif;
+
+body {
+  font-family: $font-family-base;
+}
+
+.container {
+  // PC
+  max-width: 1320px; // 1296px + 24px(左右間距)
+  padding: 0 12px;
+  margin: 0 auto;
+  @include pad {
+    max-width: 720px; // 696px +24px
+  }
+  @include mobile {
+    max-width: 372px; // 348px + 24px
+  }
+}
+// header, footer
+.text-secondary-color-1 {
+  color: $secondary-color-1
+}
+.bg-primary-1 {
+  background: $primary-color-1;
+}
+.card-border-gray {
+  border: 1px solid $gray-300;
+}
+// CONTENT
+.content {
+  padding: 96px 0 0px 12px;
+  @include pad {
+    padding: 80px 12px;
+  }
+  @include mobile {
+    padding: 40px 12px;
+  }
+  h1 {
+    border-left: 15px solid $primary-color-2;
+    padding-left: 16px;
+    @include mobile {
+      font-size: 24px;
+    }
+  }
+  .form {
+    .list-title {
+      white-space: nowrap;
+      @include padToMobile {
+        font-size: 16px;
+      }
+    }
+    .city-dropdown {
+      position: relative;
+      width: 304px;
+      padding: 6px 12px;
+      border: 1px solid $gray-100;
+      li {
+        color: rgba($gray-200, .75);
+      }
+    }
+    .expand-icon {
+      position: absolute;
+      right: 12px;
+      top: 6px;
+      cursor: pointer;
+    }
+  }
+
+  .card-container {
+    padding: 40px 0;
+    h3 {
+      padding: 8px 0 8px 24px;
+      border-bottom: 1px solid $gray-300;
+    }
+    .shop-info {
+      padding: 16px 0 16px 26px;
+    }
+    .detailed-info {
+      color: $white;
+      display: block;
+      padding: 16px 0;
+      background: $black;
+    }
+  }
+}
+
+/* 置於最後 */
+@include pad {
+  .col-md-6 {
+    width: 50%;
+  }
+  .col-md-10 {
+    width: 83.333%;
+  }
+  .col-md-12 {
+    width: 100%;
+  }
+  .mb-md-6 {
+    margin-bottom: 24px;
+  }
+  .mr-md-2 {
+    margin-right: 8px;
+  }
+  .px-md-9 {
+    // 分開寫的原因是避免覆蓋掉.section-block
+    padding-left: 36px;
+    padding-right: 36px;
+  }
+  .flex-md-wrap {
+    flex-wrap: wrap;
+  }
+  .flex-md-col {
+    flex-direction: column;
+  }
+  .section-md-block {
+    padding: 40px 0;
+  }
+}
+
+@include mobile {
+  .col-sm-4 {
+    width: 100%;
+  }
+  .px-sm-3 {
+    padding-left: 12px;
+    padding-right: 12px;
+  }
+  // .mb-sm-2 {
+  //   margin-bottom: 8px;
+  // }
+  .mb-sm-6 {
+    margin-bottom: 24px;
+  }
+}
