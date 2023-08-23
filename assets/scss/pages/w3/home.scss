@@ -117,20 +117,11 @@ body {
       margin-bottom: 24px;
     }
   }
-  .product-classic {
-    @media(max-width: 1400px) {
-    }
-    @media(max-width: 992px) {
-      h3 {
-        font-size: 40px;
-        margin-bottom: 24px;
-      }
-      // padding-left: 0;
-      // padding-right: 0;
-      padding: 0;
-      flex-direction: column;
-      align-items: center;
-    }
+  @media(max-width: 992px) { //參考助教的問題回覆加上此斷點
+    padding-top: 0;
+    padding-bottom: 0;
+    flex-direction: column;
+    align-items: center;
   }
 }
 // PRODUCT CO-BRAND
@@ -246,7 +237,8 @@ body {
     flex-direction: column;
   }
   .section-md-block {
-    padding: 40px 0;
+    padding-top: 40px;
+    padding-bottom: 40px;
   }
 }
 
