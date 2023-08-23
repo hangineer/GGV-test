@@ -1,16 +1,16 @@
 @mixin links ($link, $visited, $hover, $active) {
-    & {
-        color: $link;
-        &:visited {
-            color: $visited;
-        }
-        &:hover {
-            background: $hover;
-        }
-        &:active, &:focus {
-            color: $active;
-        }
+  & {
+    color: $link;
+    &:visited {
+        color: $visited;
     }
+    &:hover {
+        background: $hover;
+    }
+    &:active, &:focus {
+        color: $active;
+    }
+  }
 }
 
 @mixin round-button($hover, $textColor) {
