@@ -58,7 +58,8 @@ body {
 }
 // 各個區塊使用
 .section-block {
-  padding: 80px 0;
+  padding-top: 80px;
+  padding-bottom: 80px;
 }
 
 // HEADER + FOOTER 從外部引入
