@@ -18,10 +18,8 @@
     <%- include('./layout/w3/header'); -%>
     <!-- CONTENT -->
     <div class="content container">
-      <div class="mb-8 mb-sm-6">
-        <h1 class="fs-48">門市據點</h1>
-      </div>
-      <div class="mb-10 mb-sm-6">
+      <div>
+        <h1 class="fs-48 mb-8 mb-sm-6">門市據點</h1>
         <form class="form d-flex items-center" action="">
           <!-- TODO:  做成動態下拉選單 -->
           <span class="list-title fs-24 mr-4 mr-md-2">選擇地區</span>
@@ -33,20 +31,22 @@
           </select> -->
           <ul class="city-dropdown">
             <li class="fs-18">台北市</li>
-            <li class="fs-18 d-none ">台中市</li>
-            <li class="fs-18 d-none ">高雄市</li>
+            <li class="fs-18 d-none">台中市</li>
+            <li class="fs-18 d-none">高雄市</li>
             <li>
               <span class="expand-icon material-symbols-outlined">expand_more</span>
             </li>
           </ul>
         </form>
+      </div>
+      <div class="mb-10 mb-sm-6">
         <!-- 台北中山旗艦店 -->
         <div class="container card-container">
           <div class="row flex-wrap">
-            <div class="card col-4 col-md-6 col-sm-4 px-3">
+            <div class="card col-4 col-md-6 col-sm-4 px-3 mb-12 mb-md-6">
               <img src="/assets/images/w3/store-1.png" alt="taipei chung-shan store">
               <h3 class="fs-24 card-border-gray">台北中山旗艦店</h3>
-              <div class="card-border-gray mb-12">
+              <div class="card-border-gray">
                 <ul class="shop-info">
                   <li class="d-flex">
                     <p><span class="mr-2 material-symbols-outlined">call</span>電話：(02)000-1234</p>
@@ -62,7 +62,7 @@
               </div>
             </div>
             <!-- 台北綠園店 -->
-            <div class="card col-4 col-md-6 col-sm-4 px-3">
+            <div class="card col-4 col-md-6 col-sm-4 px-3 mb-12 mb-md-6">
               <img src="/assets/images/w3/store-2.png" alt="taipei green-garden store">
               <h3 class="fs-24 card-border-gray">台北綠園店</h3>
               <div class="card-border-gray">
@@ -81,7 +81,7 @@
               </div>
             </div>
             <!-- 台中清水旗艦店 -->
-            <div class="card col-4 col-md-6 col-sm-4 px-3">
+            <div class="card col-4 col-md-6 col-sm-4 px-3 mb-12 mb-md-6">
               <img src="/assets/images/w3/store-3.png" alt="taichung chin-shui store">
               <h3 class="fs-24 card-border-gray">台中清水旗艦店</h3>
               <div class="card-border-gray">
@@ -100,7 +100,7 @@
               </div>
             </div>
             <!-- 高雄中正形象店 -->
-            <div class="card col-4 col-md-6 col-sm-4 px-3">
+            <div class="card col-4 col-md-6 col-sm-4 px-3 mb-12 mb-md-6">
               <img src="/assets/images/w3/store-4.png" alt="kaohsiung chung-zheng store">
               <h3 class="fs-24 card-border-gray">高雄中正形象店</h3>
               <div class="card-border-gray">
@@ -119,7 +119,7 @@
               </div>
             </div>
             <!-- 高雄夢時代店 -->
-            <div class="card col-4 col-md-6 col-sm-4 px-3">
+            <div class="card col-4 col-md-6 col-sm-4 px-3 mb-12 mb-md-6">
               <img src="/assets/images/w3/store-5.png" alt="kaohsiung dream-mall store">
               <h3 class="fs-24 card-border-gray">高雄夢時代店</h3>
               <div class="card-border-gray">
