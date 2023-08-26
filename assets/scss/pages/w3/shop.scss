@@ -29,18 +29,21 @@ body {
     max-width: 372px; // 348px + 24px
   }
 }
-// header, footer
+
+// header, footer 使用 開始
 .text-secondary-color-1 {
   color: $secondary-color-1
 }
 .bg-primary-1 {
   background: $primary-color-1;
 }
+// header, footer 使用 結束
 .card-border-gray {
   border: 1px solid $gray-300;
 }
+
 // CONTENT
-.content {
+.wrapper {
   padding: 96px 0 0px 12px;
   @include pad {
     padding: 80px 12px;
@@ -55,29 +58,57 @@ body {
       font-size: 24px;
     }
   }
+
   .form {
-    .list-title {
+    .form-title {
       white-space: nowrap;
       @include padToMobile {
         font-size: 16px;
       }
     }
-    .city-dropdown {
-      position: relative;
+    .ui-dropdown-list {
       width: 304px;
-      padding: 6px 12px;
+      left: 112px;
+      top: 0;
+      cursor: pointer;
       border: 1px solid $gray-100;
+      @include mobile {
+        width: 276px;
+        left: 72px;
+      }
       li {
         color: rgba($gray-200, .75);
+        border: 0;
+        &:hover{
+          color: $black;
+        }
       }
     }
     .expand-icon {
-      position: absolute;
-      right: 12px;
-      top: 6px;
-      cursor: pointer;
+      left: 268px;
+      top: 7px;
+      @include mobile {
+        left: 240px;
+      }
     }
   }
+  // 動態下拉選單 使用 開始
+  .selected-option {
+    padding: 6px 12px;
+    border-bottom: 1px solid $gray-100;
+  }
+  .option {
+    width: 100%;
+    max-height: 0;
+    overflow: hidden;
+  }
+  .ui-dropdown-list .option.expend { // JS
+    padding: 6px 12px;
+    max-height: 100%;
+    border-top: 1px solid $gray-100;
+    background-color: $white;
+  }
+  // 動態下拉選單 使用 結束
 
   .card-container {
     padding: 40px 0 32px 0;
@@ -115,6 +146,9 @@ body {
   .col-md-12 {
     width: 100%;
   }
+  .mb-md-0 {
+    margin-bottom: 0px;
+  }
   .mb-md-6 {
     margin-bottom: 24px;
   }
@@ -145,9 +179,6 @@ body {
     padding-left: 12px;
     padding-right: 12px;
   }
-  // .mb-sm-2 {
-  //   margin-bottom: 8px;
-  // }
   .mb-sm-6 {
     margin-bottom: 24px;
   }

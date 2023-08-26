@@ -16,25 +16,18 @@
   </head>
   <body>
     <%- include('./layout/w3/header'); -%>
-    <!-- CONTENT -->
-    <div class="content container">
-      <div>
+    <!-- 標題 & 下拉選單 -->
+    <div class="container wrapper">
+      <div class="mb-10 mb-md-0">
         <h1 class="fs-48 mb-8 mb-sm-6">門市據點</h1>
-        <form class="form d-flex items-center" action="">
-          <!-- TODO:  做成動態下拉選單 -->
-          <span class="list-title fs-24 mr-4 mr-md-2">選擇地區</span>
-          <!-- <label class="fs-24 mr-4 mr-md-2" for="city">選擇地區</label>
-          <select class="col-3" id="city" required>
-            <option class="fs-18" value="taipei" selected>台北市</option>
-            <option class="fs-18" value="taichung">台中市</option>
-            <option class="fs-18" value="kaohsiung">高雄市</option>
-          </select> -->
-          <ul class="city-dropdown">
-            <li class="fs-18">台北市</li>
-            <li class="fs-18 d-none">台中市</li>
-            <li class="fs-18 d-none">高雄市</li>
+        <form class="form d-flex p-relative items-center" action="">
+          <span class="form-title fs-24 mr-4 mr-md-2">選擇地區</span>
+          <ul id="dropdown-list" class="p-absolute ui-dropdown-list">
+            <li class="fs-18 selected-option">台北市</li>
+            <li class="option fs-18">台中市</li>
+            <li class="option fs-18">高雄市</li>
             <li>
-              <span class="expand-icon material-symbols-outlined">expand_more</span>
+              <span class="p-absolute expand-icon material-symbols-outlined">expand_more</span>
             </li>
           </ul>
         </form>
@@ -148,3 +141,13 @@
     <!-- 助教建議 -->
   </body>
 </html>
+<script>
+  const expendIcon = document.querySelector('.expand-icon');
+  const listOption = document.querySelectorAll('.option');
+  const dropdownList = document.getElementById('dropdown-list')
+  expendIcon.addEventListener("click", () => {
+    listOption.forEach(item => {
+      item.classList.toggle('expend');
+    })
+  })
+</script>
