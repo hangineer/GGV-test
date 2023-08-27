@@ -13,7 +13,7 @@
     <!-- public -->
     
     
-    <link rel="stylesheet" href="/hex-layout-class/assets/shop-e6156c83.css">
+    <link rel="stylesheet" href="/hex-layout-class/assets/shop-37f764ef.css">
     <link rel="stylesheet" href="/hex-layout-class/assets/footer-55222c2b.css">
   </head>
   <body>
@@ -38,7 +38,8 @@
             <li class="option fs-18">台中市</li>
             <li class="option fs-18">高雄市</li>
             <li>
-              <span class="p-absolute expand-icon material-symbols-outlined">expand_more</span>
+              <span onclick="toggleDropdown()" class=" p-absolute expand-icon material-symbols-outlined">arrow_drop_down</span>
+              <span onclick="toggleDropdown()" class="d-none p-absolute drop-up-icon material-symbols-outlined">arrow_drop_up</span>
             </li>
           </ul>
         </form>
@@ -186,11 +187,16 @@
 </html>
 <script>
   const expendIcon = document.querySelector('.expand-icon');
-  const listOption = document.querySelectorAll('.option');
+  const dropUpIcon = document.querySelector('.drop-up-icon');
+  const listOptions = document.querySelectorAll('.option');
   const dropdownList = document.getElementById('dropdown-list');
-  expendIcon.addEventListener("click", () => {
-    listOption.forEach(item => {
-      item.classList.toggle('expend');
-    })
-  })
+  let isExpanded = false;
+  function toggleDropdown() {
+  expendIcon.style.display = isExpanded ? 'block' : 'none';
+  dropUpIcon.style.display = isExpanded ? 'none' : 'block';
+  listOptions.forEach(item => {
+    item.classList.toggle('expend');
+  });
+  isExpanded = !isExpanded;
+}
 </script>
