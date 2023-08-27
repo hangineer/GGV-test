@@ -1,0 +1,32 @@
+$primary-color: #198754;
+$secondary-color-1: #f8f9fa;
+
+.vertical-bottom {
+  vertical-align: text-bottom;
+}
+.selected {
+  color: $primary-color;
+  border-left: 5px solid $primary-color;
+}
+
+.aside {
+  background: $secondary-color-1;
+  padding: 40px 113px 40px 0;
+  min-width: 296px;
+  min-height: 100vh;
+  margin-right: 18px;
+  .aside-items {
+    padding-left: 32px;
+    margin-bottom: 32px;
+    &:last-child {
+      position: absolute;
+      bottom:0;
+      left: 0;
+    }
+    .person-img {
+      border-radius: 50%;
+      width: 40px;
+      height: 40px;
+    }
+  }
+}

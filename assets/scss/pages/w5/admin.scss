@@ -1,0 +1,89 @@
+@import '../../utils/variables';
+@import '../../base/reset';
+@import '../../utils/spacing';
+@import '../../utils/helpers';
+@import '../../utils/mixins';
+
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700;900&display=swap');
+
+$primary-color: #198754;
+$secondary-color-1: #f8f9fa;
+$secondary-color-2: #6c757d;
+$border: #ced4da;
+
+body {
+  font-family: "Lato", sans-serif;
+}
+
+.container {
+  position: relative;
+  max-width: 1320px;
+  padding: 0 15px;
+  height: 100vh;
+}
+
+/* ICON */
+.material-symbols-outlined {
+  cursor: pointer;
+}
+.material-icons {
+  color: $primary-color;
+  vertical-align: text-top;
+}
+.material-icons.md-18 {
+  font-size: 18px;
+}
+.material-icons.md-24 {
+  font-size: 24px;
+}
+
+// 右半邊
+.main {
+  margin-left: 328px; // 296 + 32(margin)
+  margin-right: 32px;
+  header {
+    padding-top: 32px;
+    padding-bottom: 48px;
+  }
+}
+table {
+  border-collapse: collapse;
+  max-width: 100%;
+  tr {
+    cursor: pointer;
+    text-align: left;
+    border-bottom: 1px solid $border;
+    th {
+      font-weight: bold;
+    }
+    td {
+      padding: 19px 0 17px 0;
+    }
+    &:hover {
+      background: $secondary-color-1;
+    }
+  }
+}
+.email {
+  color: $secondary-color-2;
+}
+
+// PAGINATION
+.pagination {
+  position: absolute;
+  bottom: 32px;
+  cursor: pointer;
+  ul {
+    li {
+      border: 1px solid $black;
+      width: 32px;
+      height: 32px;
+      text-align: center;
+      padding: 6px 0;
+    }
+    .selected {
+      background: $primary-color;
+      color: $white;
+    }
+  }
+}
