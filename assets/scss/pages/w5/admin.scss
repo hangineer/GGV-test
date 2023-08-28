@@ -16,10 +16,8 @@ body {
 }
 
 .container {
-  position: relative;
   max-width: 1320px;
-  padding: 0 15px;
-  height: 100vh;
+  padding: 32px 15px;
 }
 
 /* ICON */
@@ -42,7 +40,6 @@ body {
   margin-left: 328px; // 296 + 32(margin)
   margin-right: 32px;
   header {
-    padding-top: 32px;
     padding-bottom: 48px;
   }
 }
@@ -70,8 +67,7 @@ table {
 
 // PAGINATION
 .pagination {
-  position: absolute;
-  bottom: 32px;
+  margin-top: 63px;
   cursor: pointer;
   ul {
     li {
