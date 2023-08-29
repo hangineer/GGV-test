@@ -12,7 +12,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@48,600,1,0" />
-    <link rel="stylesheet" href="/hex-layout-class/assets/admin-e62c07e5.css">
+    <link rel="stylesheet" href="/hex-layout-class/assets/admin-60f73078.css">
   </head>
   <body>
     <!-- 左半邊 -->
@@ -59,157 +59,159 @@
   </div>
 </div>
     <!--  右半邊  -->
-    <div class="main container d-flex flex-col">
-      <header class="d-flex justify-between">
-        <div class="d-flex items-center">
-          <h3 class="fw-bold fs-24 mr-12">Admin</h3>
-          <span class="material-icons md-24 material-symbols-outlined mr-2">add</span>
-          <span class="fw-bold">Add New Admin</span>
+    <div class="main">
+      <div class="container d-flex flex-col">
+        <header class="d-flex justify-between">
+          <div class="d-flex items-center">
+            <h3 class="fw-bold fs-24 mr-12">Admin</h3>
+            <span class="material-icons md-24 material-symbols-outlined mr-2">add</span>
+            <span class="fw-bold">Add New Admin</span>
+          </div>
+          <div>
+            <span class="material-symbols-outlined mr-6">search</span>
+            <span class="material-symbols-outlined">notifications_active</span>
+          </div>
+        </header>
+        <table>
+          <tr>
+            <th>ID
+              <span class="material-icons md-18 material-symbols-outlined">arrow_downward</span>
+            </th>
+            <th>Name</th>
+            <th>Email</th>
+            <th>Verified</th>
+          </tr>
+          <tr>
+            <td>#1</td>
+            <td>Emir Wicks</td>
+            <td>emir.wicks@mail.com</td>
+            <td class="d-flex justify-between items-center">
+              <span>Yes</span>
+              <div>
+                <span class="material-symbols-outlined mr-6">visibility</span>
+                <span class="material-symbols-outlined">edit</span>
+              </div>
+            </td>
+          </tr>
+          <tr>
+            <td>#2</td>
+            <td>Zaina Goldsmith</td>
+            <td>zaina.goldsmith@mail.com</td>
+            <td class="d-flex justify-between items-center">
+              <span>Yes</span>
+              <div>
+                <span class="material-symbols-outlined mr-6">visibility</span>
+                <span class="material-symbols-outlined">edit</span>
+              </div>
+            </td>
+          </tr>
+          <tr>
+            <td>#3</td>
+            <td>Mahima Lopez</td>
+            <td>mahima.lopez@mail.com</td>
+            <td class="d-flex justify-between items-center">
+              <span>Yes</span>
+              <div>
+                <span class="material-symbols-outlined mr-6">visibility</span>
+                <span class="material-symbols-outlined">edit</span>
+              </div>
+            </td>
+          </tr>
+          <tr>
+            <td>#4</td>
+            <td>Pharrell Murray</td>
+            <td>pharrell.murray@mail.com</td>
+            <td class="d-flex justify-between items-center">
+              <span>Yes</span>
+              <div>
+                <span class="material-symbols-outlined mr-6">visibility</span>
+                <span class="material-symbols-outlined">edit</span>
+              </div>
+            </td>
+          </tr>
+          <tr>
+            <td>#5</td>
+            <td>Annika Mcbride</td>
+            <td>annika.mcbride@mail.com</td>
+            <td class="d-flex justify-between items-center">
+              <span>Yes</span>
+              <div>
+                <span class="material-symbols-outlined mr-6">visibility</span>
+                <span class="material-symbols-outlined">edit</span>
+              </div>
+            </td>
+          </tr>
+          <tr>
+            <td>#6</td>
+            <td>Fatimah Clark</td>
+            <td>fatimah.clark@mail.com</td>
+            <td class="d-flex justify-between items-center">
+              <span>Yes</span>
+              <div>
+                <span class="material-symbols-outlined mr-6">visibility</span>
+                <span class="material-symbols-outlined">edit</span>
+              </div>
+            </td>
+          </tr>
+          <tr>
+            <td>#7</td>
+            <td>Klaudia Rhodes</td>
+            <td>klaudia.rhodes@mail.com</td>
+            <td class="d-flex justify-between items-center">
+              <span>Yes</span>
+              <div>
+                <span class="material-symbols-outlined mr-6">visibility</span>
+                <span class="material-symbols-outlined">edit</span>
+              </div>
+            </td>
+          </tr>
+          <tr>
+            <td>#8</td>
+            <td>Tillie Lucero</td>
+            <td>tillie.lucero@mail.com</td>
+            <td class="d-flex justify-between items-center">
+              <span>Yes</span>
+              <div>
+                <span class="material-symbols-outlined mr-6">visibility</span>
+                <span class="material-symbols-outlined">edit</span>
+              </div>
+            </td>
+          </tr>
+          <tr>
+            <td>#9</td>
+            <td>Sabrina Stephenson</td>
+            <td>sabrina.stephenson@mail.com</td>
+            <td class="d-flex justify-between items-center">
+              <span>Yes</span>
+              <div>
+                <span class="material-symbols-outlined mr-6">visibility</span>
+                <span class="material-symbols-outlined">edit</span>
+              </div>
+            </td>
+          </tr>
+          <tr>
+            <td>#10</td>
+            <td>Annie Smith</td>
+            <td>annie.smith@mail.com</td>
+            <td class="d-flex justify-between items-center">
+              <span>Yes</span>
+              <div>
+                <span class="material-symbols-outlined mr-6">visibility</span>
+                <span class="material-symbols-outlined">edit</span>
+              </div>
+            </td>
+          </tr>
+        </table>
+        <div class="pagination self-end">
+          <!--  為何這裡下 items-end (align-items: flex-end;) 沒有效果-->
+          <ul class="d-flex items-end">
+            <li><span class="material-symbols-outlined">chevron_left</span></li>
+            <li class="selected">1</li>
+            <li>2</li>
+            <li>3</li>
+            <li><span class="material-symbols-outlined">chevron_right</span></li>
+          </ul>
         </div>
-        <div>
-          <span class="material-symbols-outlined mr-6">search</span>
-          <span class="material-symbols-outlined">notifications_active</span>
-        </div>
-      </header>
-      <table>
-        <tr>
-          <th>ID
-            <span class="material-icons md-18 material-symbols-outlined">arrow_downward</span>
-          </th>
-          <th>Name</th>
-          <th>Email</th>
-          <th>Verified</th>
-        </tr>
-        <tr>
-          <td>#1</td>
-          <td>Emir Wicks</td>
-          <td>emir.wicks@mail.com</td>
-          <td class="d-flex justify-between items-center">
-            <span>Yes</span>
-            <div>
-              <span class="material-symbols-outlined mr-6">visibility</span>
-              <span class="material-symbols-outlined">edit</span>
-            </div>
-          </td>
-        </tr>
-        <tr>
-          <td>#2</td>
-          <td>Zaina Goldsmith</td>
-          <td>zaina.goldsmith@mail.com</td>
-          <td class="d-flex justify-between items-center">
-            <span>Yes</span>
-            <div>
-              <span class="material-symbols-outlined mr-6">visibility</span>
-              <span class="material-symbols-outlined">edit</span>
-            </div>
-          </td>
-        </tr>
-        <tr>
-          <td>#3</td>
-          <td>Mahima Lopez</td>
-          <td>mahima.lopez@mail.com</td>
-          <td class="d-flex justify-between items-center">
-            <span>Yes</span>
-            <div>
-              <span class="material-symbols-outlined mr-6">visibility</span>
-              <span class="material-symbols-outlined">edit</span>
-            </div>
-          </td>
-        </tr>
-        <tr>
-          <td>#4</td>
-          <td>Pharrell Murray</td>
-          <td>pharrell.murray@mail.com</td>
-          <td class="d-flex justify-between items-center">
-            <span>Yes</span>
-            <div>
-              <span class="material-symbols-outlined mr-6">visibility</span>
-              <span class="material-symbols-outlined">edit</span>
-            </div>
-          </td>
-        </tr>
-        <tr>
-          <td>#5</td>
-          <td>Annika Mcbride</td>
-          <td>annika.mcbride@mail.com</td>
-          <td class="d-flex justify-between items-center">
-            <span>Yes</span>
-            <div>
-              <span class="material-symbols-outlined mr-6">visibility</span>
-              <span class="material-symbols-outlined">edit</span>
-            </div>
-          </td>
-        </tr>
-        <tr>
-          <td>#6</td>
-          <td>Fatimah Clark</td>
-          <td>fatimah.clark@mail.com</td>
-          <td class="d-flex justify-between items-center">
-            <span>Yes</span>
-            <div>
-              <span class="material-symbols-outlined mr-6">visibility</span>
-              <span class="material-symbols-outlined">edit</span>
-            </div>
-          </td>
-        </tr>
-        <tr>
-          <td>#7</td>
-          <td>Klaudia Rhodes</td>
-          <td>klaudia.rhodes@mail.com</td>
-          <td class="d-flex justify-between items-center">
-            <span>Yes</span>
-            <div>
-              <span class="material-symbols-outlined mr-6">visibility</span>
-              <span class="material-symbols-outlined">edit</span>
-            </div>
-          </td>
-        </tr>
-        <tr>
-          <td>#8</td>
-          <td>Tillie Lucero</td>
-          <td>tillie.lucero@mail.com</td>
-          <td class="d-flex justify-between items-center">
-            <span>Yes</span>
-            <div>
-              <span class="material-symbols-outlined mr-6">visibility</span>
-              <span class="material-symbols-outlined">edit</span>
-            </div>
-          </td>
-        </tr>
-        <tr>
-          <td>#9</td>
-          <td>Sabrina Stephenson</td>
-          <td>sabrina.stephenson@mail.com</td>
-          <td class="d-flex justify-between items-center">
-            <span>Yes</span>
-            <div>
-              <span class="material-symbols-outlined mr-6">visibility</span>
-              <span class="material-symbols-outlined">edit</span>
-            </div>
-          </td>
-        </tr>
-        <tr>
-          <td>#10</td>
-          <td>Annie Smith</td>
-          <td>annie.smith@mail.com</td>
-          <td class="d-flex justify-between items-center">
-            <span>Yes</span>
-            <div>
-              <span class="material-symbols-outlined mr-6">visibility</span>
-              <span class="material-symbols-outlined">edit</span>
-            </div>
-          </td>
-        </tr>
-      </table>
-      <div class="pagination self-end">
-        <!--  為何這裡下 items-end (align-items: flex-end;) 沒有效果-->
-        <ul class="d-flex items-end">
-          <li><span class="material-symbols-outlined">chevron_left</span></li>
-          <li class="selected">1</li>
-          <li>2</li>
-          <li>3</li>
-          <li><span class="material-symbols-outlined">chevron_right</span></li>
-        </ul>
       </div>
     </div>
     <!-- 設計稿 https://xd.adobe.com/view/456141fc-d0a0-44d4-93ad-6ab54a4b5351-1032/grid -->
