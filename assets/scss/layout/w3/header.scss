@@ -14,6 +14,10 @@ header {
     }
   }
   .header-item {
+    cursor: pointer;
+    :hover {
+      color: rgba($white, .5);
+    }
     @include pad {
       margin-right: 0;
       border: 1px solid $white;

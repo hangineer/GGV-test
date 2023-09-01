@@ -3,6 +3,10 @@
 
 // W3 FOOTER 區塊文字、圖案在過渡時期會被擠壓造成跑版，在 576px 多加一個斷點
 ul.footer-list {
+  cursor: pointer;
+  :hover {
+    color: rgba($white, .5);
+  }
   @include pad {
     gap: 24px;
   }
