@@ -45,6 +45,10 @@ body {
 .bg-primary-1 {
   background: $primary-color-1;
 }
+.bg-transparent {
+  background: transparent;
+}
+
 .italic-roboto {
   font-family: 'roboto';
   font-style: italic;
@@ -54,15 +58,14 @@ body {
 }
 .regular-noto-sans {
   font-family: 'Noto Sans TC';
-
 }
+
 // 各個區塊使用
 .section-block {
   padding-top: 80px;
   padding-bottom: 80px;
 }
 
-// HEADER + FOOTER 從外部引入
 // BANNER
 .banner {
   background: $primary-color-1 url('/assets/images/w3/home-header.png') 20% 50%/cover no-repeat;
@@ -94,6 +97,9 @@ body {
   }
   button {
     padding: 6px 12px;
+    &:hover {
+      background: $hover;
+    }
   }
 }
 
@@ -167,8 +173,9 @@ body {
       height: 205px;
     }
     .date {
-      position: absolute;
-      bottom: 16px;
+      // position: absolute;
+      // bottom: 16px;
+      margin-top: auto;
       color: $gray-200;
     }
   }
@@ -176,6 +183,9 @@ body {
 
 // CONTACT US
 .contact-us {
+  input {
+    padding-left: 12px;
+  }
   input:not([type="checkbox"]):not([type="submit"]) {
     width: 100%;
     height: 36px;
@@ -252,5 +262,11 @@ body {
   }
   .mb-sm-2 {
     margin-bottom: 8px;
+  }
+  .mobile-img {
+    display: block;
+  }
+  .pc-img {
+    display: none;
   }
 }
