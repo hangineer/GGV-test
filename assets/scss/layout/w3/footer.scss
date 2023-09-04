@@ -1,12 +1,21 @@
 @import "../../utils/mixins";
 @import "../../utils/variables";
 
-// W3 FOOTER 區塊文字、圖案在過渡時期會被擠壓造成跑版，在 576px 多加一個斷點
-ul.footer-list {
+.common-link-style {
   cursor: pointer;
-  :hover {
+  color: $white;
+  &:hover {
     color: rgba($white, .5);
   }
+  img {
+    &:hover {
+      transform: rotate(20deg);
+    }
+  }
+}
+
+// W3 FOOTER 區塊文字、圖案在過渡時期會被擠壓造成跑版，在 576px 多加一個斷點
+ul.footer-list {
   @include pad {
     gap: 24px;
   }
@@ -20,6 +29,7 @@ ul.footer-list {
   }
 }
 ul.footer-social-media {
+  cursor: pointer;
   @include padToMobile {
     margin-left: auto;
   }
@@ -84,8 +94,8 @@ ul.footer-social-media {
     padding: 24px 0;
     flex-direction: column;
     .privacy {
-      span {
-        display: block;
+      @include mobile {
+        flex-direction: column;
       }
     }
   }
