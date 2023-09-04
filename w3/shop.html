@@ -14,7 +14,7 @@
     
     
     <link rel="stylesheet" href="/hex-layout-class/assets/shop-04789eca.css">
-    <link rel="stylesheet" href="/hex-layout-class/assets/footer-de9cd6c8.css">
+    <link rel="stylesheet" href="/hex-layout-class/assets/footer-42d12edd.css">
   </head>
   <body>
     <header class="header text-secondary-color-1 fs-20 bg-primary-1">
@@ -30,7 +30,7 @@
 </header>    <!-- 標題 & 下拉選單 -->
     <div class="container wrapper">
       <div class="mb-md-6">
-        <h1 class="fs-48 mb-8 mb-sm-6">門市據點</h1>
+        <h1 class="fs-48 fw-bold mb-8 mb-sm-6">門市據點</h1>
         <form class="form d-flex p-relative items-center" action="#">
           <span class="form-title fs-24 mr-4 mr-md-2">選擇地區</span>
           <ul id="dropdown-list" class="p-absolute ui-dropdown-list">
@@ -187,13 +187,16 @@
     </div>
     <div class="footer-policy d-flex justify-between flex-md-wrap">
       <p class="regular-roboto col-sm-4 mb-sm-2">Copyright © 2020 Glasses.All rights reserved.</p>
-      <div class="privacy">
-        <span class="mr-12 mb-sm-2">隱私權政策</span>
-        <span class="mr-12">服務條款</span>
-      </div>
+      <ul class="privacy d-flex">
+        <!-- 為何這裡加上 class="cursor-pointer" 才吃得到，寫在css檔裡無效 -->
+        <li class="mr-12 mb-sm-2"><a class="cursor-pointer">隱私權政策</a></li>
+        <li class="mr-12"><a class="cursor-pointer">服務條款</a></li>
+      </ul>
     </div>
   </footer>
 </div>
+<a href="tel:+"></a>
+<a href="mailto:"></a>
 
 <!-- 助教建議
 1. 社群 ICON 和文字都是連結喔，可用 ul > li > a 的結構
